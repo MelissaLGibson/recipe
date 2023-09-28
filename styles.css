@@ -1,0 +1,388 @@
+/*
+    COLOR PALETTE
+    CHARCOAL:     #0D0D0D
+    OFF WHITE:    #F2F2F2
+    LIGHT BLUE:   #7ABFBF
+    LIGHTER BLUE: rgba(122, 191, 191, .5)
+    ORANGE:       #EB5428
+
+    TYPOGRAPHY
+    BEBAS NEUE - REGULAR
+        H1 - 40PX
+        H2 - 30PX
+        H3 - 20PX
+        NAV A - 20PX
+        NAV SPAN - 20PX
+        MENU LI - 2OPX
+        #SOCIAL LI - 20PX
+        FOOTER - 20PX
+    MONTSERRAT - REGULAR
+        P - 16PX
+        DD - 16PX
+        LI - 16PX
+        NAV - 16PX
+        INPUT - 16PX
+    MONTSERRAT - BOLD
+        DT - 16PX
+*/
+/*
+    SMALL/MOBILE LAYOUT
+*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700&display=swap');
+
+@media (min-width:414px) {
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    background-color: rgba(122, 191, 191, .5);
+    font-family: 'BEBAS NEUE', 'Montserrat', sans-serif;
+    color: #0D0D0D;
+    max-width: 1280px;
+}
+body { 
+    background-color: #F2F2F2;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding:0;
+}
+header {
+    position: relative;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 25%;
+    padding: 0;
+    z-index: 1;
+
+}
+header ul {
+    margin: 0 auto;
+    padding-left: 10%;
+}
+header li {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 1%;
+}
+header li a {
+    margin: 0 auto;
+    padding: 1%;
+}
+header li:nth-child(3n+4) svg{
+    margin-left: 20%;
+}
+.ingredients li {
+    color: #0D0D0D;
+    list-style-type: disc;
+}
+h1, h2, h3, a, nav a, nav span, label, .menu li, #social li, footer{
+    font-family: 'BEBAS NEUE', sans-serif;
+}
+h1, h2, h3 {
+    text-align: center;
+    margin: 2%;
+}
+h1 {
+    font-size: 40px;
+    margin: 0 auto;
+    padding-top: 20%;
+}
+h2 {
+    font-size: 30px;
+}
+h3 {
+    font-size: 25px;
+}
+.grid-container h3 {
+    text-align: left;
+}
+a, nav a, nav span, label, .menu li, #social li, footer {
+    font-size: 20px;
+}
+p, dd, dt, li, nav, input {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+dl {
+    margin: 0;
+    padding-bottom: 20px;
+}
+dt {
+    font-weight: bold;
+}
+dd {
+    margin-right: 5%;
+}
+.grid-container {
+    display:grid;
+    grid-template-columns: auto auto;
+
+    column-gap: 0%;
+    margin: 0;
+}
+.grid-container img{
+    width: 50%;
+    margin: 0px;
+    margin-left: 25%;
+}
+main img {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: #F2F2F2;
+    margin-bottom: 5%;
+}
+aside {
+    background-color: #7ABFBF;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+aside div dl dt:first-of-type {
+    font-weight: 400;
+    }
+input[type=search]{
+    height: 40px;
+    padding: 0px;
+    margin: 0px;
+    border: 3px solid #EB5428;
+}
+.search-bar{
+    bottom:70%;
+  
+    margin: 0 auto;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    background-color: #F2F2F2;
+}
+div.search-bar {
+    background-color: #F2F2F2;
+    top: 15%;
+    height: 15%;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 0;
+}
+.search-bar span {
+    display: inline-flex;
+}
+.search-bar h3 {
+    margin-left: 1%;
+}
+button {
+    padding: 0;
+    margin: 0;
+    border: 5px solid #EB5428;
+}
+button svg{
+    fill: #EB5428;
+    stroke: #F2F2F2;
+    background: #EB5428;
+    margin: -7px;
+    border: 5px solid #EB5428;
+}
+ul, ol, p {
+    margin: 0 5%;
+}
+ul li{
+    padding-bottom: 2%;
+    list-style: none;
+    color: #EB5428;
+}
+ol li {
+    padding-bottom: 2%;
+}
+#social ul {
+    margin: 0 auto;
+    padding-left: 10%;
+}
+#social li {
+    display: inline-block;
+    margin: 0 auto;
+}
+#social li a {
+    margin: 0 auto;
+    padding: 1%;
+}
+#social li svg {
+    margin: 0 auto;
+}
+#social h2, #social h3 {
+    visibility: hidden;
+    height: 0%;
+    margin: 0;
+    padding: 0;
+}
+nav {
+    padding: 0px;
+    left: 0px;
+    right: 10%;
+    width: 99%;
+    border-bottom: 1px solid #0D0D0D;
+    box-shadow: 0px 0px 12px 0px #0D0D0D;
+    position: absolute;
+    margin: 0 auto;
+    top: 0;
+}
+nav div{
+    position: absolute;
+}
+nav h2 {
+    visibility: hidden;
+    height: 0px;
+}
+nav label {
+    right: 50%;
+    width: 25%;
+    top: 0%;
+}
+#home {
+    width: 50%;
+    left: 25%;
+    top: 0%;
+    height: 100%;
+    background-color: #EB5428;
+    margin: 0;
+}
+#home svg {
+    fill: #EB5428;
+    stroke: #F2F2F2;
+    margin: 0 auto;
+    margin-top: 10%;
+    margin-left: 35%;
+}
+#signin {
+    margin: 0 auto;
+    right: 2%;
+    width: 20%; 
+    top: 20%;
+    text-align: center;
+    margin: 0;
+}
+nav {
+    height: 15%;
+    width: 100%;
+    z-index: 1;
+    background-color: #FFFFFF;
+}
+nav ul {
+    position:absolute;
+    right: 300%;
+    top: 50%;
+    z-index: 1;
+}
+nav a svg{
+    stroke: #EB5428;
+}
+.nav-grid {
+    display: grid;
+    grid-template-columns: 100px 200px 100px;
+    grid-template-rows: 300px;
+}
+nav ul li a img {
+    width: 15%;
+    height: auto;
+}
+section{
+    margin: 0 auto;
+    padding:5px;
+}
+footer figure {
+    text-align: center;
+}
+footer figure img {
+    width: 50%;
+    margin: 0 auto; 
+}
+/* HAMBURGER MENU */
+.menu ul {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+.menu label {
+    cursor: pointer;
+    display: inline-block;
+    padding: 8% 18%;
+    position: relative;
+    user-select: none;
+    margin: 0px;
+}
+.menu input {
+    display: none;
+}
+.menu input:checked ~ ul {
+    max-height: 300%;
+    width: 200%;
+    top: 33%;
+    background-color: #F2F2F2;
+    border: 1px solid #0D0D0D;
+    box-shadow: 2px 2px 10px #0D0D0D;
+    position: relative;
+    z-index: 1;
+    padding-top: 5%;
+}
+.menu input:checked ~ label span {
+    background: transparent;
+}
+.menu input:checked ~ label span:before {
+    transform: rotate(-45deg);
+}
+.menu input:checked ~ label span:after {
+    transform: rotate(45deg);
+}
+.menu input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps) span:after {
+    top: 0;
+}
+}
+/*
+    MEDIUM/TABLET LAYOUT
+*/
+@media (min-width: 768px) {
+
+html{
+    background-color: pink;
+}
+header{
+    width: 100%;
+}
+h1 {
+    text-align: left;
+}
+header ul{
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+header ul li {
+    display: inline-flex;
+    margin: 0 6%;
+}
+p {
+    margin-bottom: 2%;
+}
+p.details {
+    text-align: center;
+}
+.ul-ol-grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 0;
+}
+}
+/*
+    LARGE/DESKTOP LAYOUT
+*/
+@media (min-width: 1280px) {
+
+
+
+
+
+
+
+
+}
