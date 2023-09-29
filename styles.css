@@ -373,7 +373,7 @@ footer figure img {
 .hamburger ul {
     overflow: hidden;
     max-height: 0;
-    transition: max-height .2s ease-out;
+    transition: max-height .5s;
 }
 .hamburger label {
     cursor: pointer;
@@ -396,18 +396,6 @@ footer figure img {
     position: relative;
     z-index: 1;
     padding-top: 5%;
-}
-.hamburger input:checked ~ label span {
-    background: transparent;
-}
-.hamburger input:checked ~ label span:before {
-    transform: rotate(-45deg);
-}
-.hamburger input:checked ~ label span:after {
-    transform: rotate(45deg);
-}
-.hamburger input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps) span:after {
-    top: 0;
 }
 }
 /*
