@@ -656,7 +656,7 @@ h2.details {
     color:#7ABFBF;
     width: 1280px;
     margin: 0;
-    padding: 1% 0;
+    padding: 0;
 }
 .details-grid {
     display: grid;
