@@ -621,7 +621,7 @@ nav ul li a {
 }
 div.search-bar {
     background-color: transparent;
-    top: 18%;
+    top: 15%;
     width: 1280px;
     margin-left: 0%;
     z-index: 2;
@@ -677,13 +677,13 @@ h2.details {
 figcaption {
     position: absolute;
     top: 2200px;
-    left: 350px;
+    left: 600px;
 }
 #social {
     position: absolute;
     padding-top: 0;
     top: 2150px;
-    left: 800px;
+    left: 1000px;
 }
 .aside-item-01{
     order: 1;
@@ -744,6 +744,27 @@ figcaption {
 }
 .details-item-06, .details-item-07, .details-item-08, .details-item-09, .details-item-10 {
     display: block;
+}
+}
+
+
+
+@media print{
+
+body{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+img, nav.hamburger, nav.nav-grid, div.search-bar, menu{
+    display: none;
+}
+header {
+    top: 0;
+}
+#social ul li a[href]::after{
+    content: " " attr(href); 
+}
+#social ul li a[href]{
+    margin-bottom: 0.25in;
 }
 
 }
