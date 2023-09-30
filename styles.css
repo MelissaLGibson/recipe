@@ -50,7 +50,7 @@ body {
     SMALL/MOBILE LAYOUT
 */
 
-@media (min-width:414px) {
+@media (min-width:320px) {
 body { 
     background-color: #F2F2F2;
     width: 414px;
